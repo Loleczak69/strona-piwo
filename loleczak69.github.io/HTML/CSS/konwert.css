@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(5, 161, 0);
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#wynik {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+}

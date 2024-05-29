@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="HTML/CSS/layout.css">
+    <link rel="stylesheet" href="HTML/CSS/form.css">
+<style>
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 1024px;
+    margin: auto;
+}
+body>header{
+    width: 1024px;
+    height: 150px;
+    background-color: rgb(9, 192, 18);
+  
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+nav, article, aside{
+    display: block;
+    height: 800px;
+    float: left;
+}
+nav, aside{
+    width: 210px;
+    background-color: rgb(20, 250, 70);
+    padding: 5px;
+}
+article{
+    width: 604px;
+ 
+    background: radial-gradient(circle at 500px 650px, rgb(238, 255, 0) 5%, rgb(6, 182, 0) 15%, rgb(134, 206, 0) 70%);
+    background: radial-gradient(square at 300px 400px, rgb(238, 255, 0) 5%, rgb(6, 182, 0) 15%, rgb(134, 206, 0) 70%);
+    padding: 15px;
+    overflow: auto;
+}
+body>footer{
+    background-color: black;
+    color: white;
+    padding: 50px 10px 10px 30px;
+    border: 5px solid rgb(96, 233, 5);
+    clear: both;
+}
+body>footer hr{
+    border: 2px dotted rgba(132, 247, 66, 0.808) ;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+aside{
+    text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Piwko</h1>
+    </header>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li> <a href="index.html"> Strona główna </a> </li>
+            <li><a href="https://alkoholeswiata24.pl/piwa" target="_blank">
+                alkoholeswiata24</a></li>
+            <li><a href="jasne.html">Piwa jasne</a></li>
+            <li><a href="ciemne.html">Piwa ciemne</a></li>
+            <li><a href="smak.html">Piwa smakowe</a></li>
+            <li><a href="free.html">Piwa bezalkoholowe</a></li>
+            <li><a href="mapa.html">Mapa najlepszych piw</a></li>
+            <li><a href="formularz.html">Formularz</a></li>
+            <li><a href="galeria.html">Galeria zdjęć</a></li>
+            <li><a href="tabela.html">Tabela</a></li>
+            <li><a href="myCanvas.html">Logo</a></li>
+            <li><a href="wysoko.html">Piwo wysoko %</a></li>
+            <li><a href="alkomat.html">Alkomat</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h2>Formularz danych osobowych piwosza</h2>
+        <form action="mailto: fbnzlwsk@gmail.com" method="post">
+            <h4>
+                Proszę wypełnić ten formularz. <br>
+                Pola oznaczone <em>*</em> są obowiązkowe!
+            <br>
+             W przypadku zamówienia należy podać adres dostawy.</h4>
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+                <label for="imie">Imie<em>*</em> </label>
+                <input type="text" name="imie" id="imie" required autofocus ><br>
+                <label for="nazw">Nazwisko<em>*</em> </label>
+                <input type="text" name="nazw" id="nazw" required><br>
+                <label for="tele">Telefon<em>*</em> </label>
+                <input type="tel" name="tele" id="tele" required 
+                placeholder="(+48) xxx-xxx-xxx"><br>
+                <label for="mail">Mail<em>*</em> </label>
+                <input type="email" name="mail" id="mail" required 
+                placeholder="imie.nazwisko@example.com"><br>
+
+            </fieldset>
+            <fieldset><legend>Szczegółowe dane osobowe</legend>
+                <label for="waga">Waga</label>
+                <input type="number" name="waga" id="waga" 
+                min="0" max="150" step="0.5"><br>
+
+                <label for="Wzrost">Wzrost</label>
+                <input type="range" name="Wzrost" id="Wzrost" 
+                min="0" max="240" step="40" value="180"> (0-240)[cm] <br>
+
+                <label for="pleć">Płeć</label>
+                <select name="pleć" id="pleć">
+                    <option value="kobieta">Kobieta</option>
+                    <option value="mężczyzna">Mężczyzna</option>
+                    <option value="nie podaję" selected>nie podaję</option>
+                </select><br>
+                <label for="dataUr">Data urodzenia</label>
+                <input type="date" name="dataUr" id="dataUr"><br>
+            </fieldset>
+
+            <fieldset><legend>Preferencje smakowe</legend>
+                Piwo jasne <input type="checkbox" name="zainteresowania" id=""><br>
+               Piwo ciemne <input type="checkbox" name="zainteresowania" id=""><br>
+               Piwo smakowe <input type="checkbox" name="zainteresowania" id=""><br>
+              Piwo wysoko% <input type="checkbox" name="zainteresowania" id=""><br>
+              Piwo free <input type="checkbox" name="zainteresowania" id=""><br>
+              Nie piję <input type="checkbox" name="zainteresowania" id=""><br>
+        
+              
+          
+            
+            <fieldset><legend>Przedział piw wypitych w tygodniu</legend>
+                <input type="radio" name="lp" id="" value="0-18"> 0-5 <br>
+                <input type="radio" name="lp" id="" checked> 6-10 <br>
+                <input type="radio" name="lp" id=""> 11-15 <br>
+                <input type="radio" name="lp" id=""> 16-20 <br>
+                <input type="radio" name="lp" id=""> więcej <br>
+            </fieldset>
+        </fieldset>
+        <fieldset><legend>Przedział wiekowy</legend>
+            <input type="radio" name="przed_wiek" id="" value="0-18"> 0-18 <br>
+            <input type="radio" name="przed_wiek" id="" checked> 19-30 <br>
+            <input type="radio" name="przed_wiek" id=""> 31-50 <br>
+            <input type="radio" name="przed_wiek" id=""> 51-70 <br>
+            <input type="radio" name="przed_wiek" id=""> więcej <br>
+        </fieldset>
+        <fieldset>
+        <legend>Dane dostawy</legend>
+                <label for="adres">Adres <em>*</em> </label>
+                <input type="adres" name="imie" id="adres" required autofocus ><br>
+                <label for="miasto">Miasto<em>*</em> </label>
+                <input type="text" name="miasto" id="miasto" required autofocus ><br>
+                <label for="kod">Kod pocztowy <em>*</em> </label>
+                <input type="text" name="kod" id="kod" required autofocus ><br>
+            </fieldset>
+            <fieldset><legend>Zamów piwo</legend>
+                <textarea name="Zamowienie" id="" cols="50" rows="10"
+                placeholder="Napisz konkretnie jakie piwo i w jakiej ilości"></textarea>
+                <br>
+                
+            </fieldset>
+
+            <input type="submit" value="Wyślij">
+            <input type="reset" value="Kasuj formularz">
+        </form>
+    </article>
+    <aside>
+    
+        <h2>Reklama</h2>
+           
+        <img src="HTML/images/perla.jpg" width="200px" height="730px">
+    </aside>
+    <footer>
+        autor: Fabian Zalewski <hr>
+        kontakt: <br>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br> 61-138 Poznań <br>
+        email: fbnzlwsk@gmail.com <hr>
+        Projekt strony internetowej wykonany w ramach
+    zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.
+    </footer>
+  
+    
+</body>
+</html>

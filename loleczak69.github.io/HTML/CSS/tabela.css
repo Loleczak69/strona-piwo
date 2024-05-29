@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 1024px;
+    margin: auto;
+}
+body>header{
+    width: 1024px;
+    height: 130px;
+    background-color: rgb(0, 170, 28);
+    text-align: center;
+    padding: 10px;
+   font-size: 30px;
+}
+
+nav, article, aside{
+    padding: 4px;
+    display: block;
+    height: 600px;
+    float: left;
+}
+nav, aside{
+    width: 210px;
+    background-color: rgba(15, 175, 0, 0.897);
+}
+article{
+    width: 604px;                             
+    background: radial-gradient(circle at 300px 400px, rgb(4, 245, 24) 5%, rgb(4, 177, 90) 15%, rgb(115, 250, 4) 70%);
+    padding: 30px;
+    overflow: auto;
+}
+body>footer{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    clear: both;
+}
+
+table, th{
+    border: 1px solid rgb(3, 2, 2);
+  text-align: center
+   
+
+}
+td{
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+}
+table, tr, td, th{
+   border-spacing: 0px;
+}
